@@ -1,0 +1,268 @@
+DECISION MAKING STATEMENTS 1:
+1.To write a program that finds out whether it is Dawn or Dusk.
+SAMPLE INPUT & OUTPUT 1:
+  BLUE
+  It is Dawn  
+SAMPLE INPUT & OUTPUT 2:
+  GREEN
+  Invalid Input
+CODE:
+a=input()
+if a=="BLUE":
+    print("It is Dawn")
+elif a=="RED":
+    print("It is Dusk")
+else:
+    print("Invalid Input")
+
+2.To write a program to check whether Xinyou can drive or not. 
+SAMPLE INPUT & OUTPUT 1:
+  sunny
+  Yes I can drive :)
+SAMPLE INPUT & OUTPUT 2:
+  misty
+  Sorry invalid input :|
+SAMPLE INPUT & OUTPUT3:
+  rainy
+  No I cant drive :(
+CODE:
+a=input()
+if a=="sunny":
+    print("Yes I can drive :)")
+elif a=="rainy":
+    print("No I cant drive :(")
+else:
+    print("Sorry invalid input :|")
+
+3.To write a program module that checks if he will be able to make it to the conference on time.
+SAMPLE INPUT & OUTPUT 1:
+  100
+  25
+  16:00
+  10:00
+  Yes
+SAMPLE INPUT & OUTPUT 2:
+  150
+  50
+  10:00
+  16:00
+  Invalid Input
+CODE:
+d=int(input())
+s=int(input())
+ti=input()
+tj=input()
+t=d/s
+a=int(ti[0:2])
+b=int(tj[0:2])
+c=a-b
+if tj<ti and c>t:
+    print("Yes")
+elif tj<ti and c<t:
+    print("No")
+else:
+    print("Invalid Input")
+
+4.To write a program module that checks if he will be able to make it to the conference on time.
+SAMPLE INPUT & OUTPUT:
+  100
+  25
+  5
+  Yes
+SAMPLE INPUT & OUTPUT 2:
+  150
+  -50
+  123
+  Invalid Input
+CODE:
+a=int(input())
+b=int(input())
+c=int(input())
+d=a/b
+if d<c and b>0:
+    print("Yes")
+elif d>c:
+    print("No")
+else:
+    print("Invalid Input")
+
+5.To write a program module that finds out whether he ought to take a monthly-pass or a combination of one-way and two-way passes.
+SAMPLE INPUT & OUTPUT 1:
+  10
+  15
+  10
+  12
+  250
+  Monthly Pass
+SAMPLE INPUT & OUTPUT 2:
+  20
+  20
+  100
+  110
+  5000
+  One way pass  +  Two way pass
+SAMPLE INPUT & OUTPUT 3:
+  10
+  15
+  15
+  12
+  250
+  Invalid Input
+CODE:
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+f=(a*c)+(b*d)
+if e<=f and c<d:
+    print("Monthly Pass")
+elif e>f and c<d:
+    print("One way pass + Two way pass")
+else:
+    print("Invalid Input")
+
+6.To write a program module that checks if all the seat belts have been worn.
+SAMPLE INPUT & OUTPUT 1:
+  yes
+  yes
+  yes
+  Yes I can drive  
+SAMPLE INPUT & OUTPUT 2:
+  No
+  Yes
+  Yes
+  Invalid Input
+CODE:
+a=input()
+b=input()
+c=input()
+if a=="yes"and b=="yes" and c=="yes":
+    print("Yes I can drive")
+elif a=="no"and b=="no"and c=="no":
+    print("No I can't drive")
+else:
+    print("Invalid Input")
+
+7.To write a program module that finds the quantity of fuel that has to be filled at bunks A and B.
+SAMPLE INPUT & OUTPUT:
+  100
+  200
+  25
+  B
+  4.00
+  4.00
+CODE:
+import math
+a=int(input())
+b=int(input())
+c=float(input())
+d=input()
+if d=="A":
+    e=b/c
+    g=e-e
+    print("%.2f"%e)
+    print("%.2f"%g)
+else:
+    e=a/c
+    f=(b-a)/c
+    print("%.2f"%e)
+    print("%.2f"%f)
+
+8.To write a program to find out the variety of fuel.
+SAMPLE INPUT & OUTPUT 1:
+  25
+  75
+  100
+  3
+  500
+  Speed
+SAMPLE INPUT & OUTPUT 2:
+  25
+  75
+  100
+  25
+  80
+  Ordinary
+CODE:
+a=float(input())
+b=float(input())
+c=float(input())
+d=int(input())
+e=float(input())
+f=d/a;
+g=f*b
+h=f*c
+if e<=g or e>=h:
+    print("Speed")
+else:
+    print("Ordinary")
+
+9.To write a program to check if the tyres already have enough air and print whether the tyres have to be deflated, inflated or left untouched. 
+SAMPLE INPUT & OUTPUT: 
+  33 
+  35 
+  40 
+  31 
+  Front-left : Untouched 
+  Rear-left : Deflate 
+  Rear-right : Deflate 
+  Front-right : Inflate 
+CODE:
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if a==33:
+    print("Front-left : Untouched")
+elif a<33:
+    print("Front-left : Inflate")
+else:
+    print("Front-left : Deflate")
+    
+if b==32:
+    print("Rear-left : Untouched")
+elif b<32:
+    print("Rear-left : Inflate")
+else:
+    print("Rear-left : Deflate")
+if c==32:
+    print("Rear-right : Untouched")
+elif c<32:
+    print("Rear-right : Inflate")
+else:
+    print("Rear-right : Deflate")
+
+if d==33:
+    print("Front-right : Untouched")
+elif d<33:
+    print("Front-right : Inflate")
+else:
+    print("Front-right : Deflate")
+
+10.To write a program that instructs Xinyou in this regard.
+SAMPLE INPUT & OUTPUT 1:
+  red
+  Stop
+SAMPLE INPUT & OUTPUT 2:
+  blue
+  Invalid Input
+SAMPLE INPUT & OUTPUT 3:
+  Blue
+  Invalid Input
+CODE:
+a=input()
+if a=="red":
+    print("Stop")
+elif a=="Red":
+    print("Stop")
+elif a=="yellow":
+    print("Get Ready")
+elif a=="Yellow":
+    print("Get Ready")
+elif a=="green":
+    print("Go")
+elif a=="Green":
+    print("Go")
+else:
+    print("Invalid Input")
